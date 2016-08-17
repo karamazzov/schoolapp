@@ -37,6 +37,43 @@ $(document).ready(function(){
             $(this).children().css({'color':'white'})
             
                                
-        });
+        });      
                   
+});
+
+$(document).ready(function(){
+     $('#dugme1').click(function (){
+            $('#dugme1').parent().parent().css( "background-color", "green" )
+        });
+
+});
+$(document).ready(function(){
+     $('#dugme2').click(function (){
+            $('#dugme2').parent().parent().css( "background-color", "green" )
+        });
+
+});
+$(document).ready(function(){
+     $('#dugme3').click(function (){
+            $('#dugme3').parent().parent().css( "background-color", "green" )
+        });
+
+});
+$(document).ready(function(){
+     $('#nodugme1').click(function (){
+            $('#nodugme1').parent().parent().css( "background-color", "red" )
+        });
+
+});
+$(document).ready(function(){
+     $('#nodugme2').click(function (){
+            $('#nodugme2').parent().parent().css( "background-color", "red" )
+        });
+
+});
+$(document).ready(function(){
+     $('#nodugme3').click(function (){
+            $('#nodugme3').parent().parent().css( "background-color", "red" )
+        });
+
 });

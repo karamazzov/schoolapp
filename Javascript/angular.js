@@ -26,4 +26,7 @@ schoolApp.controller('clickToEdit', function($scope){
       
   };
     
+  $scope.colorGreen = function(){
+    
+  }
 });
