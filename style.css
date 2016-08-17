@@ -175,6 +175,16 @@ span {
 
 }
 
+@media (max-width: 720px) {
+    
+    .details-btn {
+        
+        width: 80px;
+        
+    }
+    
+}
+
 #center{
     
     float:none;
@@ -233,7 +243,8 @@ span {
     float:none;
     position: absolute;
     left: 50%;
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    margin-top:10px;
     
 }
 
@@ -266,14 +277,14 @@ span {
     
     .ocene {
         
-        width: 80px;
+        width: 65px;
         margin: 0;
         
     }
     
     .status {
         
-        width: 80px;
+        width: 65px;
         margin: 0;
     }
     

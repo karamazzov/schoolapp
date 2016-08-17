@@ -43,37 +43,37 @@ $(document).ready(function(){
 
 $(document).ready(function(){
      $('#dugme1').click(function (){
-            $('#dugme1').parent().parent().css( "background-color", "green" )
+            $('#dugme1').parent().parent().css( "background-color", "#6AF79A" )
         });
 
 });
 $(document).ready(function(){
      $('#dugme2').click(function (){
-            $('#dugme2').parent().parent().css( "background-color", "green" )
+            $('#dugme2').parent().parent().css( "background-color", "#6AF79A" )
         });
 
 });
 $(document).ready(function(){
      $('#dugme3').click(function (){
-            $('#dugme3').parent().parent().css( "background-color", "green" )
+            $('#dugme3').parent().parent().css( "background-color", "#6AF79A" )
         });
 
 });
 $(document).ready(function(){
      $('#nodugme1').click(function (){
-            $('#nodugme1').parent().parent().css( "background-color", "red" )
+            $('#nodugme1').parent().parent().css( "background-color", "#FC5050" )
         });
 
 });
 $(document).ready(function(){
      $('#nodugme2').click(function (){
-            $('#nodugme2').parent().parent().css( "background-color", "red" )
+            $('#nodugme2').parent().parent().css( "background-color", "#FC5050" )
         });
 
 });
 $(document).ready(function(){
      $('#nodugme3').click(function (){
-            $('#nodugme3').parent().parent().css( "background-color", "red" )
+            $('#nodugme3').parent().parent().css( "background-color", "#FC5050" )
         });
 
 });
