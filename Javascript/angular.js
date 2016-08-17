@@ -3,13 +3,15 @@ var schoolApp = angular.module('schoolApp', []);
 schoolApp.controller('clickToEdit', function($scope){
 
   $scope.predmet = "Matematika";
-  $scope.profesor = "Živojin Život";
+  $scope.ocene1 = "3, 4, 4, 5";
+  $scope.ocene2 = "4, 4, 3, 2";
   $scope.editorEnabled = false;
   
   $scope.enableEditor = function() {
     $scope.editorEnabled = true;
     $scope.editableTitleSubject = $scope.predmet;
-    $scope.editableTitleProfessor = $scope.profesor;
+    $scope.editableTitleOcene1 = $scope.ocene1;
+    $scope.editableTitleOcene2 = $scope.ocene2;
       
   };
   
@@ -21,12 +23,11 @@ schoolApp.controller('clickToEdit', function($scope){
   $scope.save = function() {
       
     $scope.predmet = $scope.editableTitleSubject;
-    $scope.profesor = $scope.editableTitleProfessor;
+    $scope.ocene1 = $scope.editableTitleOcene1;
+    $scope.ocene2 = $scope.editableTitleOcene2;
     $scope.disableEditor();
       
   };
     
-  $scope.colorGreen = function(){
-    
-  }
+
 });

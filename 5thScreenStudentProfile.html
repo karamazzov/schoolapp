@@ -66,7 +66,6 @@
                                             <tr>
 
                                               <th>Predmet</th>
-                                              <th>Profesor</th>
                                               <th>Ocene (Pismeni)</th>
                                               <th>Ocene (Usmeni)</th>
                                               <th>Izmeni</th>
@@ -98,27 +97,34 @@
                                                 
                                               <td ng-hide="editorEnabled">
                                                   
-                                              {{profesor}}
+                                              {{ocene1}}
                                                   
                                               <div ng-show="editorEnabled">
                                                   
                                               <td ng-show="editorEnabled">
-                                              <input class="edit-professor-input" ng-model="editableTitleProfessor" ng-show="editorEnabled">
+                                              <input class="edit-professor-input" ng-model="editableTitleOcene1" ng-show="editorEnabled">
+                                              </td>
+                                                  
+                                              </div>
+                                                  
+                                              </td>
+                                                
+                                                
+                                              <td ng-hide="editorEnabled">
+                                                  
+                                              {{ocene2}}
+                                                  
+                                              <div ng-show="editorEnabled">
+                                                  
+                                              <td ng-show="editorEnabled">
+                                              <input class="edit-professor-input" ng-model="editableTitleOcene2" ng-show="editorEnabled">
                                               </td>
                                                   
                                               </div>
                                                   
                                               </td>
                     
-                                                      
-                                                
-                                              
-                                                 
-                                                  
-                                            
-                                                
-                                              <td>3, 4, 2, 1</td>
-                                              <td >5, 3, 3, 5</td>
+      
                                                 <td ng-hide="editorEnabled"> <button class="edit" ng-click="enableEditor()"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
                                                  
                                                 <td>
@@ -140,7 +146,15 @@
 
                                               <td>Matematika</td>
                                               <td>Zivojin Zivot</td>
-                                              <td>3, 4, 3, 5</td>
+                                              <td>5, 1, 3</td>
+                                              <td> <button class="edit"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                              <td>Matematika</td>
+                                              <td>Zivojin Zivot</td>
                                               <td>5, 1, 3</td>
                                               <td> <button class="edit"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
 
@@ -151,17 +165,6 @@
                                               <td>Matematika</td>
                                               <td>Zivojin Zivot</td>
                                               <td>3, 4, 3, 5</td>
-                                              <td>5, 1, 3</td>
-                                              <td> <button class="edit"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
-
-                                            </tr>
-
-                                            <tr>
-
-                                              <td>Matematika</td>
-                                              <td>Zivojin Zivot</td>
-                                              <td>3, 4, 3, 5</td>
-                                              <td>5, 1, 3</td>
                                               <td> <button class="edit"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
 
                                             </tr>
@@ -188,7 +191,7 @@
                                             
                                               <tbody>
                                                   
-                                                  <tr ng-style="myStyle">
+                                                  <tr>
                                                   <th>18.08.16</th>
                                                   <td>Srpski</td>
                                                   <td>Da</td>
@@ -200,7 +203,7 @@
                                                   </td>
                                                 </tr>
                                                   
-                                                  <tr ng-style="myStyle">
+                                                  <tr>
                                                   <th>18.08.16</th>
                                                   <td>Srpski</td>
                                                   <td>Da</td>
@@ -212,7 +215,7 @@
                                                   </td>
                                                 </tr>
                                                   
-                                                  <tr ng-style="myStyle">
+                                                  <tr>
                                                   <th>18.08.16</th>
                                                   <td>Biologija</td>
                                                   <td>Ne</td>
