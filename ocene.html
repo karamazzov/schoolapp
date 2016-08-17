@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html ng-app="schoolApp">
+
+    <head>
+        
+         <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+         <link rel="stylesheet" href="style.css" type="text/css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="Javascript/angular.js"></script>
+        
+        <script src="jquery.js"></script>
+        
+        
+        <title>School App</title>
+    
+    
+    </head>
+    
+    <body class="body5" ng-controller="mainController">
+        
+        
+        <table class="table table-hover" id="student-stats">
+
+                     
+                          <thead>
+                            <tr>
+                            
+                              <th>Predmet</th>
+                              <th>Profesor</th>
+                              <th>Ocene</th>
+                              <th>Prosek</th>
+                                
+                            
+                                
+                            </tr>
+                              
+                          </thead>
+                    
+                          <tbody>
+                              
+                            <tr>
+                            
+                              <td>Nikola</td>
+                              <td>Tesla</td>
+                              <td ng-repeat="ocene in ocene">{{ocene}}</td>
+                                
+                               
+                                
+                            </tr>
+                              
+                           
+                          </tbody>
+                        </table>
+    
+    </body>
+    
+    
+</html>

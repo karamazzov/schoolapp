@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html ng-app="schoolApp">
+
+    <head>
+        
+         <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+         <link rel="stylesheet" href="style.css" type="text/css"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        
+        <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script src="Javascript/angular.js"></script>
+        
+        <script src="jquery.js"></script>
+        
+        <title>School App</title>
+    
+    
+    </head>
+    
+    <body class="body5">
+        
+        
+            <div class="container">
+          
+                <div class="row">
+              
+                    <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10" id="center">
+                        
+                        
+                        
+                            <img class="profile-img" src="/Images/scarlett.jpg"><br>
+                            <p class="name">Scarlett Johansson</p> <br>
+                            <p class="odeljenje">IV / 4</p> <br>
+                            <span class="glyphicon glyphicon-ok" id="correct"></span>
+                        
+                            <div id="statistika-div">
+                               
+                                    <div class="buttoni">
+
+                                    <input type="button" value="Ocene" class="ocene" ng-click="showme=true">
+                                
+                                    <input type="button" value="Status" class="status" ng-click="showme=false">
+
+                                    </div>
+                            
+                            </div>
+                           
+                                    
+                                     <table class="table table-hover" id="ocene-table" ng-show="showme" ng-controller="clickToEdit">
+
+                     
+                                          <thead>
+                                              
+                                            <tr>
+
+                                              <th>Predmet</th>
+                                              <th>Profesor</th>
+                                              <th>Ocene (Pismeni)</th>
+                                              <th>Ocene (Usmeni)</th>
+                                              <th>Izmeni</th>
+
+
+
+                                            </tr>
+
+                                          </thead>
+
+                                          <tbody>
+
+                                            <tr>
+
+                                              <td ng-hide="editorEnabled">
+                                                  
+                                              {{predmet}}
+                                                  
+                                              <div ng-show="editorEnabled">
+                                                  
+                                              <td ng-show="editorEnabled">
+                                              <input class="edit-subject-input" ng-model="editableTitleSubject">
+                                              </td>
+                                                  
+                                              </div>
+                                                  
+                                              </td>
+                                                
+                                                
+                                              <td ng-hide="editorEnabled">
+                                                  
+                                              {{profesor}}
+                                                  
+                                              <div ng-show="editorEnabled">
+                                                  
+                                              <td ng-show="editorEnabled">
+                                              <input class="edit-professor-input" ng-model="editableTitleProfessor" ng-show="editorEnabled">
+                                              </td>
+                                                  
+                                              </div>
+                                                  
+                                              </td>
+                    
+                                                      
+                                                
+                                              
+                                                 
+                                                  
+                                            
+                                                
+                                              <td>3, 4, 2, 1</td>
+                                              <td >5, 3, 3, 5</td>
+                                                <td ng-hide="editorEnabled"> <button class="edit" ng-click="enableEditor()"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
+                                                 
+                                                <td>
+                                                 <button class="savecancel" ng-click="save()" ng-show="editorEnabled">Save</button>
+                                                 <button class="savecancel" ng-click="disableEditor()" ng-show="editorEnabled">Cancel</button>
+                                                 </td>   
+                                               
+                                                
+                                                  
+                                                  
+                                
+                                                
+
+
+
+                                            </tr>
+
+                                            <tr>
+
+                                              <td>Matematika</td>
+                                              <td>Zivojin Zivot</td>
+                                              <td>3, 4, 3, 5</td>
+                                              <td>5, 1, 3</td>
+                                              <td> <button class="edit"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                              <td>Matematika</td>
+                                              <td>Zivojin Zivot</td>
+                                              <td>3, 4, 3, 5</td>
+                                              <td>5, 1, 3</td>
+                                              <td> <button class="edit"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                              <td>Matematika</td>
+                                              <td>Zivojin Zivot</td>
+                                              <td>3, 4, 3, 5</td>
+                                              <td>5, 1, 3</td>
+                                              <td> <button class="edit"> <span class="glyphicon glyphicon-edit"></span> </button> </td>
+
+                                            </tr>
+
+                                          </tbody>
+                                        </table>
+                        
+                        
+                        
+                                <div ng-hide="showme">
+                                    
+                                    
+                                        <table class="table" id="status-table">
+                                            
+                                              <thead>
+                                                  
+                                                <tr>
+                                                  <th>Datum</th>
+                                                  <th>Čas</th>
+                                                  <th>Prisutan</th>
+                                                  <th>Opravdaj</th>
+                                                </tr>
+                                                  
+                                              </thead>
+                                            
+                                              <tbody>
+                                                  
+                                                  <tr ng-style="myStyle">
+                                                  <th>18.08.2016</th>
+                                                  <td>Srpski</td>
+                                                  <td>Da</td>
+                                                  <td>
+                                                      
+                                                  <button class="pravdanje" ng-click="myStyle={'background-color': 'green'}"><span class="glyphicon glyphicon-ok-circle"></span></button>
+                                                  <button class="pravdanje" ng-click="myStyle={'background-color': 'green'}"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                                                      
+                                                  </td>
+                                                </tr>
+                                                  
+                                                  <tr ng-style="myStyle">
+                                                  <th>18.08.2016</th>
+                                                  <td>Srpski</td>
+                                                  <td>Da</td>
+                                                  <td>
+                                                      
+                                                  <button class="pravdanje"><span class="glyphicon glyphicon-ok-circle"></span></button>
+                                                  <button class="pravdanje"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                                                      
+                                                  </td>
+                                                </tr>
+                                                  
+                                                  <tr ng-style="myStyle">
+                                                  <th>18.08.2016</th>
+                                                  <td>Biologija</td>
+                                                  <td>Ne</td>
+                                                  <td>
+                                                      
+                                                  <button class="pravdanje"><span class="glyphicon glyphicon-ok-circle"></span></button>
+                                                  <button class="pravdanje"><span class="glyphicon glyphicon-remove-circle"></span></button>
+                                                      
+                                                  </td>
+                                                </tr>
+                                                  
+                                                
+                                              </tbody>
+                                            
+                                            </table>
+                        
+                        
+                                </div>
+                                    
+                                
+                                </div>
+                        
+                            </div>
+                        
+                            
+                    </div>
+                
+            
+        
+        
+    </body>
+    
+</html>

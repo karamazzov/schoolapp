@@ -1,0 +1,377 @@
+body {
+    
+    text-decoration: none;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    transition: 0.4 ease;
+    
+}
+
+
+.relative {
+    
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.for-label {
+    
+    width: 200px;
+    position: absolute;
+    top: 30%;
+    left: 48%;
+    transform: translate(-48%, -30%);
+    background-color: none;
+    
+}
+
+#enter-code {
+    
+    height: 300px;
+    background-color: #F7FBFC;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    float:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.enter-code-label{
+    
+    color: #2794eb;
+    font-size: 12px;
+    float: left;
+    
+    
+    
+} 
+
+.code-input {
+    
+    border-style: none;
+    padding: 10px;
+    height: 30px;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    transform: translate(-48%, -40%);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.enter-code-btn {
+    
+    border-style: none;
+    height: 30px;
+    border-radius: 5px;
+    background-color:#2794EB;
+    width: 200px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    transform: translate(-48%, -50%);
+    margin-top: 20px;
+    
+    
+}
+
+
+.cards {
+    
+    float:none;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-48%, -48%);
+    
+}
+
+#first-card, #second-card, #third-card, #fourth-card {
+    
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 50px;
+    background-color: none;
+    margin-top: 15px;
+    transition: 0.5s ease;
+    
+}
+
+span {
+    
+    color: grey;
+    float:none;
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    transform: translate(-48%, -48%);
+    
+    
+}
+
+.select-class-label {
+    
+    color: #2794eb;
+    font-size: 14px;
+    
+}
+
+
+#table {
+    
+    float:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#intable{
+    
+    background-color: black;
+    height: 200px;
+    
+}
+
+.details-btn{
+    
+    border-style: none;
+    border: 1px solid #2794EB;
+    text-decoration: none;
+    background-color:white;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    color: #2794EB;
+    
+
+}
+
+#center{
+    
+    float:none;
+    position: absolute;
+    top: 5%;
+    left: 48%;
+    transform: translate(-48%, -5%);
+    height: 100%;
+    
+    
+}
+
+.profile-img {
+    
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 100px;
+    
+}
+
+.name {
+    
+    float:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.odeljenje {
+    
+    float:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+    
+}
+
+#correct {
+    
+    float:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    color: greenyellow;
+    margin-top: 100px;
+    
+}
+
+
+
+.buttoni{
+    
+    float:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%)
+    
+}
+
+.ocene {
+    
+    border-style:none;
+    text-decoration:none;
+    width: 100px;
+    border-radius: 5px;
+    background-color:#2794EB;
+    color: white;
+    height: 30px;
+    margin: 5px;
+    
+}
+
+.status {
+    
+    border-style:none;
+    text-decoration:none;
+    width: 100px;
+    border-radius: 5px;
+    background-color:#2794EB;
+    color: white;
+    height: 30px;
+    margin: 5px;
+}
+
+@media (max-width: 720px) {
+    
+    .ocene {
+        
+        width: 80px;
+        margin: 0;
+        
+    }
+    
+    .status {
+        
+        width: 80px;
+        margin: 0;
+    }
+    
+    
+    
+}
+
+#show {
+    
+    background-color: black;
+    float:none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 110px;
+    width: 100%;
+    height: 500px;
+    
+}
+
+#ocene-table {
+    
+    margin-top:60px;
+    width: 100%;
+    
+}
+
+.stats-test {
+    
+    width: 100%;
+    margin-top: 60px;
+    height: 200px;
+    background-color: black;
+    
+}
+
+.edit {
+    
+    border-radius: 5px;
+    color: white;
+    border-style: none;
+    border: 1px solid grey;
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    
+    
+    
+}
+
+.edit > span {
+    
+    color: grey;
+    position:absolute;
+    margin-top: 13px;
+    margin-left: 3px;
+
+}
+
+.edit-professor-input {
+    
+    border-style: none;
+    width: 90px;
+    height: 30px;
+    
+}
+
+.edit-subject-input {
+    
+    border-style: none;
+    width: 90px;
+    height: 30px;
+    
+}
+
+.savecancel {
+    
+    display: inline-block;
+    background-color: white;
+    border-style: none;
+    border: 1px solid grey;
+    height: 30px;
+    width: 70px;
+    color: grey;
+    margin: 5px;
+    
+}
+
+#status-table {
+    
+    margin-top: 60px;
+    width: 100%;
+    
+}
+
+.pravdanje {
+    
+     display: inline-block;
+    background-color: white;
+    border-style: none;
+    border: 1px solid grey;
+    height: 30px;
+    width: 50px;
+    color: grey;
+    margin: 5px;
+    position: relative;
+    
+}
+
+.pravdanje > span {
+    
+    position: absolute;
+    margin-top: 14px;
+    margin-left: 2.5px;
+    font-size: 15px;
+    
+}
