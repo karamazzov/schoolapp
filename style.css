@@ -24,7 +24,7 @@ body {
     position: absolute;
     top: 30%;
     left: 48%;
-    transform: translate(-48%, -30%);
+    transform: translate(-48%, -22%);
     background-color: none;
     
 }
@@ -52,6 +52,11 @@ body {
     
 } 
 
+.password {
+    
+    margin-top: 65px;
+}
+
 .code-input {
     
     border-style: none;
@@ -63,8 +68,14 @@ body {
     position: absolute;
     top: 40%;
     left: 48%;
-    transform: translate(-48%, -40%);
+    transform: translate(-48%, -30%);
     box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+}
+
+.pwadmin {
+    
+    margin-top: 65px;
+    
 }
 
 .enter-code-btn {
@@ -81,6 +92,12 @@ body {
     transform: translate(-48%, -50%);
     margin-top: 20px;
     
+    
+}
+
+.admin {
+    
+    top: 75%;
     
 }
 
@@ -373,5 +390,29 @@ span {
     margin-top: 14px;
     margin-left: 2.5px;
     font-size: 15px;
+    
+}
+
+.admin-anchor {
+    
+    float:none;
+    position: absolute;
+    left: 48%;
+    top: 70%;
+    transform: translate(-48%, -70%);
+    color: #2794eb;
+    font-size: 12px;
+    
+}
+
+.admin-login-text{
+    
+    float: none;
+    position: absolute;
+    left: 48%;
+    top: 15%;
+    transform: translate(-48%, -24%);
+    font-size: 16px;
+    color: grey;
     
 }
